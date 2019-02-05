@@ -2,15 +2,27 @@
 % Please edit documentation in R/Checkr.R
 \name{Checkr}
 \alias{Checkr}
+\alias{evaluate.Checkr}
 \title{Class for combining check() function with informative message}
 \usage{
 Checkr(isvalid, message)
+
+\method{evaluate}{Checkr}(chckr, x)
 }
 \arguments{
 \item{isvalid}{isvalid(x) = TRUE if x qualifies, FALSE otherwise}
 
 \item{message}{message(x) returns message if x is not valid}
+
+\item{chckr}{Checkr object}
+
+\item{x}{object to check}
 }
 \description{
 Class for combining check() function with informative message
 }
+\section{Methods (by generic)}{
+\itemize{
+\item \code{evaluate}: 
+}}
+

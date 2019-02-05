@@ -1,3 +1,10 @@
+#' greater equal
+#'
+#' @param value value to compare to
+#' @param tolerance allowable absolute tolerance
+#'
+#' @rdname comparisons
+#'
 #' @export
 ge <- function(value, tolerance = 0) {
 

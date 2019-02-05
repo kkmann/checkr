@@ -24,9 +24,27 @@ Checkr <- function(
 
 }
 
+#' Evaluate a Checkr object
+#'
+#' Evaluate executes the provided isvalid() function of a given Checkr object.
+#' If it returns TRUE, NULL is returned, otherwiese a string generated from
+#' message().
+#'
+#' @param chckr Checkr object
+#' @param x object to check
+#'
+#' @return NULL or character
+#'
 #' @export
 evaluate <- function(chckr, x) UseMethod("evaluate", chckr)
 
+
+
+#' @describeIn Checkr
+#'
+#' @param chckr Checkr object
+#' @param x object to check
+#'
 #' @export
 evaluate.Checkr <- function(chckr, x) {
 

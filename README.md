@@ -5,6 +5,10 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.org/kkmann/checkr.svg?branch=master)](https://travis-ci.org/kkmann/checkr)
+[![Codecov test
+coverage](https://codecov.io/gh/kkmann/checkr/branch/master/graph/badge.svg)](https://codecov.io/gh/kkmann/checkr?branch=master)
 <!-- badges: end -->
 
 Object conformance checking made easy.
