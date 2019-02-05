@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549389394614.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BE8232",
+    "lastKnownWriteTime" : 1549392201,
+    "last_content_update" : 1549392201130,
+    "path" : "~/Dropbox/workspace/checkr/R/comparisons.R",
+    "project_path" : "R/comparisons.R",
+    "properties" : {
+        "cursorPosition" : "6,33",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
