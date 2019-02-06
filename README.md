@@ -45,10 +45,22 @@ f <- function(positive) {
 }
 
 f(1)
-#> NULL
+[1] NA
 ```
 
 ``` r
 f(-1)
-#> [1] "positive = -1.000e+00 < 0.000e+00"
+[1] "positive: -1.000e+00 < 0.000e+00"
+```
+
+works for arrays as well:
+
+``` r
+g <- function(some_array = matrix(1:4, nrow = 2)) {
+    evaluate(ge(3), some_array) 
+}
+cat(g())
+some_array[1, 1]: 1.000e+00 < 3.000e+00
+
+some_array[2, 1]: 2.000e+00 < 3.000e+00
 ```

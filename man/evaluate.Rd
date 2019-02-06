@@ -4,18 +4,20 @@
 \alias{evaluate}
 \title{Evaluate a Checkr object}
 \usage{
-evaluate(chckr, x)
+evaluate(chckr, x, level = -1)
 }
 \arguments{
 \item{chckr}{Checkr object}
 
 \item{x}{object to check}
+
+\item{level}{deparse level to determine original name of x}
 }
 \value{
-NULL or character
+NA_character or character
 }
 \description{
 Evaluate executes the provided isvalid() function of a given Checkr object.
-If it returns TRUE, NULL is returned, otherwiese a string generated from
+If it returns TRUE, NA is returned, otherwiese a string generated from
 message().
 }

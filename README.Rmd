@@ -4,10 +4,10 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
+  comment = "",
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
@@ -55,4 +55,12 @@ f(1)
 
 ```{r}
 f(-1)
+```
+
+works for arrays as well:
+```{r}
+g <- function(some_array = matrix(1:4, nrow = 2)) {
+    evaluate(ge(3), some_array) 
+}
+cat(g())
 ```

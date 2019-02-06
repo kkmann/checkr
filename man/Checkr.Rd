@@ -3,26 +3,35 @@
 \name{Checkr}
 \alias{Checkr}
 \alias{evaluate.Checkr}
+\alias{evaluate.CheckrArray}
 \title{Class for combining check() function with informative message}
 \usage{
-Checkr(isvalid, message)
+Checkr(isvalid, message, broadcast = FALSE)
 
-\method{evaluate}{Checkr}(chckr, x)
+\method{evaluate}{Checkr}(chckr, x, level = -1)
+
+\method{evaluate}{CheckrArray}(chckr, x, level = -1)
 }
 \arguments{
 \item{isvalid}{isvalid(x) = TRUE if x qualifies, FALSE otherwise}
 
 \item{message}{message(x) returns message if x is not valid}
 
+\item{broadcast}{should isvalid be applied element wise to arrays or lists?}
+
 \item{chckr}{Checkr object}
 
 \item{x}{object to check}
+
+\item{level}{deparse level to determine original name of x}
 }
 \description{
 Class for combining check() function with informative message
 }
 \section{Methods (by generic)}{
 \itemize{
+\item \code{evaluate}: 
+
 \item \code{evaluate}: 
 }}
 
